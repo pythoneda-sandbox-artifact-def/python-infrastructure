@@ -63,8 +63,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url =
-        "github:pythoneda-shared-pythoneda/domain-artifact-artifact/0.0.16?dir=domain-artifact";
+      url = "github:rydnr/sandbox-artifact-artifact/0.0.1?dir=sandbox-artifact";
     };
     pythoneda-shared-pythoneda-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -160,8 +159,8 @@
       let
         org = "rydnr";
         repo = "sandbox-artifact-infrastructure";
-        version = "0.0.5";
-        sha256 = "01v6lwlg6zjc9xr5rsal9dli6nf2sxfq55mymagdiz70cvva69wf";
+        version = "0.0.1";
+        sha256 = "0sbqj7mxym191vnb1fkxhha8y8jp72bjjxld0097pyza3yc4lci1";
         pname = "${org}-${repo}";
         pythonpackage = "rydnr.sandbox.artifact.infrastructure";
         pkgs = import nixos { inherit system; };
