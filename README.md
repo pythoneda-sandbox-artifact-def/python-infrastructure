@@ -1,2 +1,3 @@
-# sandbox-artifact-infrastructure-artifact
-Artifact space for rydnr/sandbox-artifact-infrastructure
+# pythoneda-sandbox/python-artifact-infrastructure-artifact
+
+Artifact space for pythoneda-sandbox/python-artifact-infrastructure
