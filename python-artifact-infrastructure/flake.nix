@@ -55,10 +55,6 @@
     pythoneda-sandbox-python-artifact = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
-      inputs.pythoneda-shared-artifact-changes-events.follows =
-        "INDIRECT-pythoneda-shared-artifact-changes-events";
-      inputs.pythoneda-shared-git-shared.follows =
-        "INDIRECT-INDIRECT-INDIRECT-INDIRECT-pythoneda-shared-git-shared";
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
@@ -160,8 +156,8 @@
       let
         org = "pythoneda-sandbox";
         repo = "python-artifact-infrastructure";
-        version = "0.0.2";
-        sha256 = "04382fpz0yn57b4gxwicvlf8zab0pgl3mhvq0z8pxkd0y8nf151f";
+        version = "0.0.3";
+        sha256 = "0ygf065539zcc41pld08j73l66gfzgsc3msvvarinc5lp5snmfjd";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.sandbox.artifact.infrastructure";
         pkgs = import nixos { inherit system; };
