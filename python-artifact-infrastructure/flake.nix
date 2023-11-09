@@ -54,7 +54,7 @@
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
       url =
-        "github:pythoneda-sandbox/python-artifact-artifact/0.0.3?dir=python-artifact";
+        "github:pythoneda-sandbox/python-artifact-artifact/0.0.4?dir=python-artifact";
     };
     pythoneda-shared-pythoneda-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
