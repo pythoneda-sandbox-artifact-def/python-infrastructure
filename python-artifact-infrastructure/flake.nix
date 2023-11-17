@@ -31,12 +31,12 @@
       inputs.pythoneda-shared-pythoneda-infrastructure.follows =
         "pythoneda-shared-pythoneda-infrastructure";
       url =
-        "github:pythoneda-shared-artifact/events-infrastructure-artifact/0.0.5?dir=events-infrastructure";
+        "github:pythoneda-shared-artifact/events-infrastructure-artifact/0.0.6?dir=events-infrastructure";
     };
     pythoneda-shared-pythoneda-banner = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
-      url = "github:pythoneda-shared-pythoneda/banner/0.0.13";
+      url = "github:pythoneda-shared-pythoneda/banner/0.0.25";
     };
     pythoneda-shared-pythoneda-domain = {
       inputs.flake-utils.follows = "flake-utils";
@@ -44,7 +44,7 @@
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
       url =
-        "github:pythoneda-shared-pythoneda/domain-artifact/0.0.13?dir=domain";
+        "github:pythoneda-shared-pythoneda/domain-artifact/0.0.16?dir=domain";
     };
     pythoneda-sandbox-python-artifact = {
       inputs.flake-utils.follows = "flake-utils";
@@ -54,7 +54,7 @@
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
       url =
-        "github:pythoneda-sandbox/python-artifact-artifact/0.0.4?dir=python-artifact";
+        "github:pythoneda-sandbox/python-artifact-artifact/0.0.6?dir=python-artifact";
     };
     pythoneda-shared-pythoneda-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -64,7 +64,7 @@
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
       url =
-        "github:pythoneda-shared-pythoneda/infrastructure-artifact/0.0.6?dir=infrastructure";
+        "github:pythoneda-shared-pythoneda/infrastructure-artifact/0.0.8?dir=infrastructure";
     };
   };
   outputs = inputs:
@@ -73,8 +73,8 @@
       let
         org = "pythoneda-sandbox";
         repo = "python-artifact-infrastructure";
-        version = "0.0.4";
-        sha256 = "0p267mz39zwbsipjb1q6i1i8ih1a5wa42zgdb10agfz4vl8113qf";
+        version = "0.0.5";
+        sha256 = "0jhkvvwmps427cr74hixbygz39hq03b3wfps3fqk4qhv839xzbsn";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.sandbox.artifact.infrastructure";
         pkgs = import nixos { inherit system; };
