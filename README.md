@@ -1,20 +1,25 @@
-# pythoneda-sandbox/python-artifact-infrastructure-artifact
+# pythoneda-sandbox-artifact/python-infrastructure
 
-(Meta)Artifact space for <https://github.com/pythoneda-sandbox/python-artifact-infrastructure>
+Definition of <https://github.com/pythoneda-sandbox-artifact/python-infrastructure>.
 
-## How to run it
+## How to declare it in your flake
 
-``` sh
-nix run 'https://github.com/pythoneda-sandbox/python-artifact-infrastructure-artifact-artifact/[version]?dir=domain-artifact'
+Check the latest tag of this repository and use it instead of the `[version]` placeholder below.
+
+```nix
+{
+  description = "[..]";
+  inputs = rec {
+    [..]
+    pythoneda-sandbox-artifact-python-infrastructure = {
+      [optional follows]
+      url =
+        "github:pythoneda-sandbox-artifact-def/python-infrastructure/[version]";
+    };
+  };
+  outputs = [..]
+};
 ```
 
-### Usage
-
-``` sh
-nix run https://github.com/pythoneda-sandbox/python-artifact-infrastructure-artifact-artifact/[version] [-h|--help] [-r|--repository-folder folder] [-e|--event event] [-t|--tag tag]
-```
-- `-h|--help`: Prints the usage.
-- `-r|--repository-folder`: The folder where <https://github.com/pythoneda-sandbox/python-artifact-infrastructure-artifact> is cloned.
-- `-e|--event`: The event to send. See <https://github.com/pythoneda-shared-artifact/events>.
-- `-t|--tag`: If the event is `TagPushed`, specify the tag.
+Should you use another PythonEDA modules, you might want to pin those also used by this project. The same applies to [https://nixos/nixpkgs](nixpkgs "nixpkgs") and [https://github.com/numtide/flake-utils](flake-utils "flake-utils").
 
