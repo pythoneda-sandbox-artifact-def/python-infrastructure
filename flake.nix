@@ -31,7 +31,7 @@
         "pythoneda-shared-pythoneda-domain";
       inputs.pythoneda-shared-pythoneda-infrastructure.follows =
         "pythoneda-shared-pythoneda-infrastructure";
-      url = "github:pythoneda-shared-artifact-def/events-infrastructure/0.0.13";
+      url = "github:pythoneda-shared-artifact-def/events-infrastructure/0.0.14";
     };
     pythoneda-shared-pythoneda-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -43,7 +43,7 @@
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
-      url = "github:pythoneda-shared-pythoneda-def/domain/0.0.18";
+      url = "github:pythoneda-shared-pythoneda-def/domain/0.0.19";
     };
     pythoneda-sandbox-artifact-python = {
       inputs.flake-utils.follows = "flake-utils";
@@ -52,7 +52,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url = "github:pythoneda-sandbox-artifact-def/python/0.0.11";
+      url = "github:pythoneda-sandbox-artifact-def/python/0.0.12";
     };
     pythoneda-shared-pythoneda-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -61,7 +61,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url = "github:pythoneda-shared-pythoneda-def/infrastructure/0.0.13";
+      url = "github:pythoneda-shared-pythoneda-def/infrastructure/0.0.14";
     };
   };
   outputs = inputs:
@@ -70,8 +70,8 @@
       let
         org = "pythoneda-sandbox-artifact";
         repo = "python-infrastructure";
-        version = "0.0.7";
-        sha256 = "1v1629i516gcvs6kbdp889221zd6fzvxypwlprd8ihvy1ff81jl6";
+        version = "0.0.8";
+        sha256 = "1w0c6lznddga9qv7nxkfnd83djxsyrbqb3c240hakmlfr8s63fg5";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.sandbox.artifact.infrastructure";
         pkgs = import nixos { inherit system; };
